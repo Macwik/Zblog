@@ -18,12 +18,14 @@ public class LoginFormValidator {
 	}
 
 	public static MapContainer validateLogin(LoginForm form) {
-		System.out.println("==============" + form + "-------------" + guard);
+		// System.out.println("==============" + form + "-------------" +
+		// guard);
 		MapContainer result = new MapContainer();
 		/* 防止用户恶意登录 */
-		if (!guard.equals(form.getGuard())) {
-			result.put("msg", "请不要尝试登录了!");
-		} else if (StringUtils.isBlank(form.getUsername()) || !form.getUsername().matches(CommRegular.USERNAME)) {
+		// if (!guard.equals(form.getGuard())) {
+		// result.put("msg", "请不要尝试登录了!");
+		// } else
+		if (StringUtils.isBlank(form.getUsername()) || !form.getUsername().matches(CommRegular.USERNAME)) {
 			result.put("msg", "请输入正确的用户名");
 		} else if (StringUtils.isBlank(form.getPassword()) || !form.getPassword().matches(CommRegular.PASSWD)) {
 			result.put("msg", "密码输入有误");

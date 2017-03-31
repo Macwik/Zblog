@@ -21,11 +21,10 @@
       <div id="introduction_widget" class="side_widget clearfix">
        <h3 class="headline">About</h3>
        <ul id="social_link">
-         <li class="rss_button"><a target="_blank" href="${g.domain}/feed"></a></li>
-         <li class="github_button"><a target="_blank" href="https://github.com/dongfangshangren"></a></li>
+        <li class="rss_button"><a target="_blank" href="#"></a></li><!-- ${g.domain}/feed -->
+        <li class="github_button"><a target="_blank" href="https://github.com/Macwik/Zblog"></a></li>
        </ul>
-       <p>You can show your site introduction by using Site Introduction Widget. 
-       You also can show Social Icon on upper part, and search form at bottom. </p>
+       <p>This is a personal website, share technology and share the happiness.Also record the growth journey all the way, little drops...  </p>
         <div id="search_area" class="clearfix">
           <form method="get" action="${g.domain}">
              <div class="search_input">

@@ -27,9 +27,9 @@
         <label for="email"><span>E-MAIL</span>( 必须 ) - 不会公开 -</label>
         <input id="email" autocomplete="off" type="text" aria-required="true" size="22" name="email">
       </div>
-      <div id="guest_url">
+      <div id="guest_url" hidden="true">
         <label for="url"><span>网址</span></label>
-        <input id="url" type="text" tabindex="3" size="22" placeholder="http://" name="url">
+        <input id="url" type="text" tabindex="3" size="22" placeholder="http://" name="url" value="http://www.baidu.com">
       </div>
      </div>
     </c:if>

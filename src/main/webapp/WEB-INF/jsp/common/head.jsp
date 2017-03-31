@@ -12,6 +12,6 @@
 <!--[if IE 6]>
 <script type="text/javascript" src="${g.domain}/resource/js/ie6.js"></script>
 <![endif]-->
-<link rel="alternate" type="application/rss+xml" href="${g.domain}/feed" title="${g.title}" />
+<link rel="alternate" type="application/rss+xml" href="#"<%--  href="${g.domain}/feed"  --%>title="${g.title}" />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="${g.domain}/xmlrpc/rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="${g.domain}/xmlrpc/wlwmanifest" />
