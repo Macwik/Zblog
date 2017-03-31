@@ -5,7 +5,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.zblog</groupId>
-  <artifactId>zblog</artifactId>
+  <artifactId>Zblog</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Zblog</name>
@@ -126,11 +126,13 @@
       <version>4.7.2</version>
     </dependency>
     <!-- 注意IKAnalyzer没有maven坐标,请自行添加到本地仓库 -->
-    <dependency>
-      <groupId>IKAnalyzer</groupId>
-      <artifactId>IKAnalyzer</artifactId>
-      <version>2012FF_u1</version>
-    </dependency>
+	<!-- https://mvnrepository.com/artifact/com.janeluo/ikanalyzer -->
+	<dependency>
+	    <groupId>com.janeluo</groupId>
+	    <artifactId>ikanalyzer</artifactId>
+	    <version>2012_u6</version>
+	</dependency>
+
 
     <!-- mybatis -->
     <dependency>
@@ -190,7 +192,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.27</version>
+      <version>5.1.40</version>
     </dependency>
 
     <!-- junit -->
@@ -241,15 +243,15 @@
 
   </dependencies>
   <build>
-   <finalName>zblog</finalName>
+   <finalName>${project.artifactId}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
       <plugin>
@@ -268,10 +270,10 @@
         <!-- 以mvn jetty:run运行 -->
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
-        <version>9.2.6.v20141205</version>
+        <version>9.4.0.v20161208</version>
         <configuration>
           <httpConnector>
-            <port>9080</port>
+            <port>8080</port>
           </httpConnector>
           <reload>automatic</reload>
           <scanIntervalSeconds>20</scanIntervalSeconds>
